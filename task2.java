@@ -47,6 +47,8 @@ public class task2{
         massive[2] = (words[0].charAt(0) + "").toUpperCase() + words[0].substring(1,words[0].length());
         return String.join("", massive);
     }
+
+    //4
     public static double[] normalizator(double[] massive){
         double max = Arrays.stream(massive).max().getAsDouble();
         double min = Arrays.stream(massive).min().getAsDouble();
