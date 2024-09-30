@@ -102,7 +102,6 @@ public class task2{
     public static String localReverse(String str, Character symbol){
         String result = "";
         String[] splitS = str.split(symbol+"", -1);
-        System.out.println(Arrays.toString(splitS));
         for (int i=0; i<splitS.length; i++) {
             if (i%2==1 && (i!=splitS.length-1 || str.charAt(str.length()-1) == symbol))
                 result += new StringBuilder(splitS[i]).reverse();
